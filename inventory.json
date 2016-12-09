@@ -1,0 +1,32 @@
+{
+	"cars": [
+		{
+			"make": "Buick",
+			"model": "Wildcat",
+			"year": "1966",
+			"price": "9999",
+			"description": "Not your grandmother's car anymore! That's where we got it, in fact."
+		},
+		{
+			"make": "Lincoln",
+			"model": "Continental",
+			"year": "1971",
+			"price": "2000",
+			"description": "We're told the trunk can hold 3 dead bodies, but we've not checked. The trunk we mean, totally not looking in there"
+		},
+		{
+			"make": "Ferrari",
+			"model": "308",
+			"year": "1978",
+			"price": "19999",
+			"description": "You can pretend to be Tom Selleck in this beauty!"
+		},
+		{
+			"make": "Yugo",
+			"model": "GV",
+			"year": "1985",
+			"price": "5",
+			"description": "Regarded as one of the worst cars ever made. Please buy it. Or just take it!"
+		}
+	]
+}
