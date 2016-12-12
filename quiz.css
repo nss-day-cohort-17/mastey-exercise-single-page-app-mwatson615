@@ -2,9 +2,23 @@ body {
 	background: slategrey;
 }
 
+h1 {
+	text-align: center;
+}
+
+article {
+	border: 1px solid black;
+	text-align: center;
+	margin: 10%;
+}
+
 .navbar {
-	background-color: green;
+	background-color: brown;
 }
 
 .textBox {
+}
+
+.carElement {
+
 }
