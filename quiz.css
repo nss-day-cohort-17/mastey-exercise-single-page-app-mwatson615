@@ -19,6 +19,12 @@ article {
 .textBox {
 }
 
-.carElement {
+.carCards {
+	display: inline-block;
+	max-width: 30%;
+}
 
+.firstStyle {
+	border-width: 5px;
+	background-color: lightgreen;
 }
