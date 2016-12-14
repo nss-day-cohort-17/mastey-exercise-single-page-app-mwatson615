@@ -16,7 +16,7 @@ var carObj;
 var carDisplay;
 var textInput = document.getElementById("textBox");
 var carCounter = 0;
-var carArray = document.getElementById("cardId");
+
 //********************//
 
 function populatePage(e) {
@@ -58,9 +58,10 @@ document.querySelector("body").addEventListener("click", function activateEvents
 // 	//when click on car element, clear the value of text input in navbar, and put
 // 	//cursor into nav bar
 //need to target all elements in div, not just
-	if (e.target.classList.contains("card")) {
+carArray = document.querySelectorAll(".card")
+for(i = 0; i < carArray.length; i++) {
 
-		// || e.target.parentElement.classList.contains("card")) {
+	if (e.target.classList.contains("card")) {
 		document.getElementById("textBox").focus();
 		document.getElementById("textBox").value = "";
 		e.target.setAttribute("class", "firstStyle");
@@ -68,21 +69,19 @@ document.querySelector("body").addEventListener("click", function activateEvents
 		document.getElementById("textBox").focus();
 		document.getElementById("textBox").value = "";
 		e.target.parentElement.setAttribute("class", "firstStyle");
-	
-// 	} else if (!e.target.parentElement.classList.contains("firstStyle") ) {
-// 		for(i = 0; i < carArray.length; i++) {
-// 		e.target.classList.removeAttribute("class", "firstStyle");
-// }
+	} else if (!e.target.parentElement.classList.contains("firstStyle") ) {
+		e.target.previousSibling.removeAttribute("firstStyle");
+
 //put in for loop following doc.qS(card) to get card array
 
 // 	// 	// e.target.parentElement.setAttribute("class", "active");
 
 // 	// }
-// 	// } else if (e.target){
-
+// 	// if click on not firststyle, remove firststyle
+}
 
 }
-console.log(e)
+console.log(carArray)
 // }
 
 })
