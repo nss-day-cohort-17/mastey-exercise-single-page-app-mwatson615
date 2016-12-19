@@ -22,7 +22,7 @@ var carCounter = 0;
 function populatePage(e) {
 	carObj = JSON.parse(e.target.responseText);
 	for (i = 0; i < carObj.cars.length; i++) {
-		carDisplay += `<article class="card card-block" id="carId">
+		carDisplay += `<article class="card card-block">
 							<h4>${carObj.cars[i].year} ${carObj.cars[i].make} ${carObj.cars[i].model}</h4>
 							<h5>$${carObj.cars[i].price}</h5>
 							<h5>${carObj.cars[i].description}</h5>
@@ -60,7 +60,7 @@ carArray = document.querySelectorAll(".card");
 
 function resetBorder() {
 	for (i = 0; i < carArray.length; i++) {
-		carArray[i].classList.removeAttribute("className", "firstStyle")
+		carArray[i].classList.remove("value", "firstStyle")
 		// carArray[i].classList.removeAttribute("class", "firstStyle")
 	// } else if (e.target.parentElement.classList.contains("firstStyle")) {
 	// 		e.target.parentElement.removeAttribute("class", "firstStyle");
