@@ -56,15 +56,16 @@ function resetBorder() {
 document.querySelector("body").addEventListener("click", function activateEvents(e) {
 carArray = document.querySelectorAll(".card");
 
-// function resetBorder() {
-// 	for (i = 0; i < carArray.length; i++) {
-// 		if (e.target.classList.contains("firstStyle")) {
-// 			e.target.removeAttribute("class", "firstStyle");
-// 	} else if (e.target.parentElement.classList.contains("firstStyle")) {
-// 			e.target.parentElement.removeAttribute("class", "firstStyle");
-// 	}
-// }
-// }
+function resetBorder() {
+	for (i = 0; i < carArray.length; i++) {
+		if (e.target.classList.contains("firstStyle")) {
+			e.target.removeAttribute("class", "firstStyle");
+	} else if (e.target.parentElement.classList.contains("firstStyle")) {
+			e.target.parentElement.removeAttribute("class", "firstStyle");
+	}
+}
+}
+resetBorder();
 function changeBorder() {
 	for (i = 0; i < carArray.length; i++) {
 		if (e.target.classList.contains("card")) {
@@ -82,6 +83,7 @@ function changeBorder() {
 	// carArray[i].setAttribute("class", "firstStyle")
 	// document.getElementById("carId").removeAttribute("class", "firstStyle")
 }
+changeBorder();
 
 
 //put in for loop following doc.qS(card) to get card array
