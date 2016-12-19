@@ -44,7 +44,7 @@ function resetBorder() {
 //changes thickness of border of car element and background color, must accept
 //2 arguments...#1 is car DOM element that was clicked...#2 is color name of
 //choice
-// function changeThickness() {
+// function changeThickness(clickedCarDOMelem, colorName) {
 // 	for(i = 0; i < carArray.length; i++)
 
 // }
@@ -53,51 +53,37 @@ function resetBorder() {
 //click of car element
 //bind description to text input when start typing
 
- 
 document.querySelector("body").addEventListener("click", function activateEvents(e) {
-// 	//when click on car element, clear the value of text input in navbar, and put
-// 	//cursor into nav bar
-//need to target all elements in div, not just
-carArray = document.querySelectorAll(".card")
-for(i = 0; i < carArray.length; i++) {
+carArray = document.querySelectorAll(".card");
 
-	if (e.target.classList.contains("card")) {
-		document.getElementById("textBox").focus();
-		document.getElementById("textBox").value = "";
-		e.target.setAttribute("class", "firstStyle");
+// function resetBorder() {
+// 	for (i = 0; i < carArray.length; i++) {
+// 		if (e.target.classList.contains("firstStyle")) {
+// 			e.target.removeAttribute("class", "firstStyle");
+// 	} else if (e.target.parentElement.classList.contains("firstStyle")) {
+// 			e.target.parentElement.removeAttribute("class", "firstStyle");
+// 	}
+// }
+// }
+function changeBorder() {
+	for (i = 0; i < carArray.length; i++) {
+		if (e.target.classList.contains("card")) {
+			document.getElementById("textBox").focus();
+			document.getElementById("textBox").value = "";
+			e.target.setAttribute("class", "firstStyle");
 	} else if (e.target.parentElement.classList.contains("card")) {
-		document.getElementById("textBox").focus();
-		document.getElementById("textBox").value = "";
-		e.target.parentElement.setAttribute("class", "firstStyle");
-	} else if (!e.target.parentElement.classList.contains("firstStyle") ) {
-		e.target.previousSibling.removeAttribute("firstStyle");
+			document.getElementById("textBox").focus();
+			document.getElementById("textBox").value = "";
+			e.target.parentElement.setAttribute("class", "firstStyle");
+	}
+}
+// for(i = 1; i <= carArray.length; i++) {
+	// carArray.article.removeAttribute("class", "firstStyle")
+	// carArray[i].setAttribute("class", "firstStyle")
+	// document.getElementById("carId").removeAttribute("class", "firstStyle")
+}
+
 
 //put in for loop following doc.qS(card) to get card array
-
-// 	// 	// e.target.parentElement.setAttribute("class", "active");
-
-// 	// }
-// 	// if click on not firststyle, remove firststyle
-}
-
-}
 console.log(carArray)
-// }
-
 })
-// })
-//function to reset border thickness and background color for each element back to original values
-
-
-//EVENT HANDLER//
-
-
-// if() {
-
-// }
-
-//************************//
-
-
-
-// document.getElementById("showInventory").addEventListener("click", loadInventory);
