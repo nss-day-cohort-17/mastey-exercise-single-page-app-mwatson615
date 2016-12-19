@@ -37,9 +37,9 @@ loadInventory();
 
 //add a function that resets the border thickness and background color for each 
 //car element back to the original values
-function resetBorder() {
+// function resetBorder() {
 
-}
+// }
 
 //changes thickness of border of car element and background color, must accept
 //2 arguments...#1 is car DOM element that was clicked...#2 is color name of
@@ -53,22 +53,25 @@ function resetBorder() {
 //click of car element
 //bind description to text input when start typing
 
-document.querySelector("body").addEventListener("click", function activateEvents(e) {
+
+
+document.querySelector("body").addEventListener("click", function activateEvents(e, changeBorder) {
 carArray = document.querySelectorAll(".card");
 
 function resetBorder() {
 	for (i = 0; i < carArray.length; i++) {
-		if (e.target.classList.contains("firstStyle")) {
-			e.target.removeAttribute("class", "firstStyle");
-	} else if (e.target.parentElement.classList.contains("firstStyle")) {
-			e.target.parentElement.removeAttribute("class", "firstStyle");
-	}
+		document.getElementById("carId").removeAttribute("class", "firstStyle")
+		// carArray[i].classList.removeAttribute("class", "firstStyle")
+	// } else if (e.target.parentElement.classList.contains("firstStyle")) {
+	// 		e.target.parentElement.removeAttribute("class", "firstStyle");
+	// }
 }
 }
 resetBorder();
+
 function changeBorder() {
 	for (i = 0; i < carArray.length; i++) {
-		if (e.target.classList.contains("card")) {
+	if (e.target.classList.contains("card")) {
 			document.getElementById("textBox").focus();
 			document.getElementById("textBox").value = "";
 			e.target.setAttribute("class", "firstStyle");
@@ -78,12 +81,14 @@ function changeBorder() {
 			e.target.parentElement.setAttribute("class", "firstStyle");
 	}
 }
+}
+changeBorder();
+
+
 // for(i = 1; i <= carArray.length; i++) {
 	// carArray.article.removeAttribute("class", "firstStyle")
 	// carArray[i].setAttribute("class", "firstStyle")
-	// document.getElementById("carId").removeAttribute("class", "firstStyle")
-}
-changeBorder();
+	
 
 
 //put in for loop following doc.qS(card) to get card array
