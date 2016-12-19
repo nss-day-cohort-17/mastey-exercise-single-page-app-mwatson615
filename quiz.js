@@ -61,10 +61,6 @@ carArray = document.querySelectorAll(".card");
 function resetBorder() {
 	for (i = 0; i < carArray.length; i++) {
 		carArray[i].classList.remove("value", "firstStyle")
-		// carArray[i].classList.removeAttribute("class", "firstStyle")
-	// } else if (e.target.parentElement.classList.contains("firstStyle")) {
-	// 		e.target.parentElement.removeAttribute("class", "firstStyle");
-	// }
 }
 console.log(carArray)
 
@@ -76,23 +72,14 @@ function changeBorder() {
 	if (e.target.classList.contains("card")) {
 			document.getElementById("textBox").focus();
 			document.getElementById("textBox").value = "";
-			e.target.setAttribute("class", "firstStyle");
+			e.target.setAttribute("class", "firstStyle card");
 	} else if (e.target.parentElement.classList.contains("card")) {
 			document.getElementById("textBox").focus();
 			document.getElementById("textBox").value = "";
-			e.target.parentElement.setAttribute("class", "firstStyle");
+			e.target.parentElement.setAttribute("class", "firstStyle card");
 	}
 }
 }
 changeBorder();
 
-
-// for(i = 1; i <= carArray.length; i++) {
-	// carArray.article.removeAttribute("class", "firstStyle")
-	// carArray[i].setAttribute("class", "firstStyle")
-	
-
-
-//put in for loop following doc.qS(card) to get card array
-// console.log(carArray)
 })
