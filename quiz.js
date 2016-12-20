@@ -55,19 +55,19 @@ loadInventory();
 
 
 
-document.querySelector("body").addEventListener("click", function activateEvents(e, changeBorder) {
+document.querySelector("body").addEventListener("click", function activateEvents(e) {
 carArray = document.querySelectorAll(".card");
 
 function resetBorder() {
 	for (i = 0; i < carArray.length; i++) {
 		carArray[i].classList.remove("value", "firstStyle")
 }
-console.log(carArray)
 
 }
 resetBorder();
-
-function changeBorder() {
+var cardElement = document.getElementsByTagName("article");
+var cardChange = document.getElementsByClassName("firstStyle");
+function changeBorder(element, color) {
 	for (i = 0; i < carArray.length; i++) {
 	if (e.target.classList.contains("card")) {
 			document.getElementById("textBox").focus();
@@ -79,7 +79,8 @@ function changeBorder() {
 			e.target.parentElement.setAttribute("class", "firstStyle card");
 	}
 }
+console.log(carArray)
 }
-changeBorder();
+changeBorder(cardElement, cardChange);
 
 })
