@@ -9,7 +9,7 @@ h1 {
 article {
 	border: 1px solid black;
 	text-align: center;
-	margin: 10%;
+	margin: 2%;
 }
 
 .navbar {
@@ -20,11 +20,18 @@ article {
 }
 
 .carCards {
-	display: inline-block;
-	max-width: 30%;
+	display: inline;
+	width: 26%;
+	margin-right: 2%
+	margin-left: 2%;
 }
 
-.firstStyle {
+/*.firstStyle {
 	border-width: 5px;
 	background-color: lightgreen;
+}*/
+
+.secondStyle {
+	border-width: 10px;
+	background-color: blue;
 }
