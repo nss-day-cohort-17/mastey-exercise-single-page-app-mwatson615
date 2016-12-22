@@ -28,10 +28,10 @@ article {
 
 .firstStyle {
 	border-width: 5px;
-	background-color: lightgreen;
+	background-color: lightblue;
 }
 
-.secondStyle {
+.red {
+	background-color: red;
 	border-width: 10px;
-	background-color: lightblue;
 }

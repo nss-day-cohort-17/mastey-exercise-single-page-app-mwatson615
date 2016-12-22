@@ -70,23 +70,22 @@ carArray = document.querySelectorAll(".card");
 function resetBorder() {
 	for (i = 0; i < carArray.length; i++) {
 		carArray[i].classList.remove("value", "firstStyle")
-		carArray[i].classList.remove("value", "secondStyle")
+		carArray[i].classList.remove("value", "red")
 }
 
 }
 resetBorder();
-var cardElement = document.getElementsByTagName("article");
-var cardChange = document.getElementsByClassName("");
+var cardElement = document.getElementsByClassName("firstStyle");
 function changeBorder(element, color) {
 	for (i = 0; i < carArray.length; i++) {
 	if (e.target.classList.contains("card")) {
 			document.getElementById("textBox").focus();
 			document.getElementById("textBox").value = "";
-			e.target.setAttribute("class", "firstStyle card col-md-3 secondStyle");
+			e.target.setAttribute("class", "firstStyle card col-md-3 " + color);
 	} else if (e.target.parentElement.classList.contains("card")) {
 			document.getElementById("textBox").focus();
 			document.getElementById("textBox").value = "";
-			e.target.parentElement.setAttribute("class", "firstStyle card col-md-3 secondStyle");
+			e.target.parentElement.setAttribute("class", "firstStyle card col-md-3 " + color);
 	// } else if (i > 2)
 	// 	e.target.setAttribute("class", "firstStyle card row col-md-3")
 	// 	e.target.parentElement.setAttribute("class", "firstStyle card row col-md-3 secondStyle")
@@ -94,6 +93,6 @@ function changeBorder(element, color) {
 }
 console.log(carArray)
 }
-changeBorder("secondStyle", "lightblue");
+changeBorder(cardElement, "red");
 
 })
