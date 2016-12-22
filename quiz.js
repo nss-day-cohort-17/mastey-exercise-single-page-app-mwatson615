@@ -93,6 +93,6 @@ function changeBorder(element, color) {
 }
 console.log(carArray)
 }
-changeBorder(cardElement, "red");
+changeBorder("article", "red");
 
 })
