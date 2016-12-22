@@ -76,7 +76,7 @@ function resetBorder() {
 }
 resetBorder();
 var cardElement = document.getElementsByClassName("firstStyle");
-function changeBorder(element, color) {
+function changeBorder(e, color) {
 	for (i = 0; i < carArray.length; i++) {
 	if (e.target.classList.contains("card")) {
 			document.getElementById("textBox").focus();
@@ -93,6 +93,6 @@ function changeBorder(element, color) {
 }
 console.log(carArray)
 }
-changeBorder("article", "red");
+changeBorder(e, "red");
 
 })
