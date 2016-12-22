@@ -82,7 +82,7 @@ function changeBorder(element, color) {
 	if (e.target.classList.contains("card")) {
 			document.getElementById("textBox").focus();
 			document.getElementById("textBox").value = "";
-			e.target.setAttribute("class", "firstStyle card col-md-3");
+			e.target.setAttribute("class", "firstStyle card col-md-3 secondStyle");
 	} else if (e.target.parentElement.classList.contains("card")) {
 			document.getElementById("textBox").focus();
 			document.getElementById("textBox").value = "";
@@ -92,8 +92,8 @@ function changeBorder(element, color) {
 	// 	e.target.parentElement.setAttribute("class", "firstStyle card row col-md-3 secondStyle")
 }
 }
-// console.log(carArray)
+console.log(carArray)
 }
-changeBorder(cardElement, "secondStyle");
+changeBorder("secondStyle", "lightblue");
 
 })
