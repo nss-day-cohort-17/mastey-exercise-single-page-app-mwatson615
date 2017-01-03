@@ -6,7 +6,7 @@ h1 {
 	text-align: center;
 }
 
-article {
+.card {
 	border: 1px solid black;
 	text-align: center;
 	margin: 2%;
@@ -16,22 +16,12 @@ article {
 	background-color: brown;
 }
 
-.textBox {
-}
-
-.carCards {
-	display: inline;
-	width: 26%;
-	margin-right: 2%
-	margin-left: 2%;
-}
-
 .firstStyle {
 	border-width: 5px;
 	background-color: lightblue;
 }
 
 .red {
-	background-color: red;
+	background-color: #e0816d;
 	border-width: 10px;
 }
