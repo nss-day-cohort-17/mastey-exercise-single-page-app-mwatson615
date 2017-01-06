@@ -81,12 +81,12 @@ function changeBorder(e, color) {
 			textInput.focus();
 			textInput.value = "";
 			carDesciption = e.target;
-			e.target.setAttribute("class", "firstStyle card col-lg-4 " + color);
+			e.target.setAttribute("class", "firstStyle card col-md-3 " + color);
 		} else if (e.target.parentElement.classList.contains("card")) {
 			textInput.focus();
 			textInput.value = "";
 			carDesciption = e.target.parentElement;
-			e.target.parentElement.setAttribute("class", "firstStyle card col-lg-4 " + color);
+			e.target.parentElement.setAttribute("class", "firstStyle card col-md-3 " + color);
 		}
 	}
 

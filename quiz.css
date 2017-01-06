@@ -11,7 +11,7 @@ h1 {
 	text-align: center;
 	margin: 2%;
 	background-color: #f4aa42;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .navbar {
