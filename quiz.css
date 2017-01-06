@@ -1,0 +1,32 @@
+body {
+	background-color: #95a584;
+}
+
+h1 {
+	text-align: center;
+}
+
+.card {
+	border: 1px solid black;
+	text-align: center;
+	margin: 2%;
+	background-color: #f4aa42;
+	justify-content: space-between;
+}
+
+.navbar {
+	background-image: url("https://i.kinja-img.com/gawker-media/image/upload/s--QUOdYlDz--/c_scale,fl_progressive,q_80,w_800/1482240233981880130.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 250px;
+}
+
+.firstStyle {
+	border-width: 5px;
+	background-color: lightblue;
+}
+
+.red {
+	background-color: #e0816d;
+	border-width: 10px;
+}
